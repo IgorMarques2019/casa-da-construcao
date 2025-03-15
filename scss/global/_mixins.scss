@@ -1,0 +1,51 @@
+$breakpoints: (
+  "laptop": 1200px,
+  "tablet": 991px,
+  "tablet-md": 768px,
+  "mobile": 560px,
+);
+
+@mixin responsive($breakpoints-name) {
+  @if map-has-key($breakpoints, $breakpoints-name) {
+    @media screen and (max-width: map-get($breakpoints,$breakpoints-name)) {
+      @content;
+    }
+  } @else {
+    @error "Esse breakpoint não existe";
+  }
+}
+
+$flex: (
+  // align-items
+  "ai": initial,
+  "ais": start,
+  "aic": center,
+  "aie": end // Justify-content
+  "jc": initial,
+  "jcs": start,
+  "jcc": center,
+  "jce": end,
+  "jsa": space-around,
+  "jsb": space-between,
+  "jse": space-evenly,
+
+  // Directions
+  "r": row,
+  "c": column
+);
+
+@mixin flex($ai, $jc, $dir) {
+  @if map-has-key($flex, $ai)
+    &&
+    map-has-key($flex, $jc)
+    &&
+    map-has-key($flex, $dir)
+  {
+    display: flex;
+    flex-direction: map-get($flex, $dir);
+    align-items: map-get($flex, $ai);
+    justify-content: map-get($flex, $jc);
+  } @else {
+    @warn "Verifique os valores.";
+  }
+}

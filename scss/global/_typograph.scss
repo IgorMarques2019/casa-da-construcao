@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  font-family: "Kantumruy Pro";
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "MuseoModerno";
+  line-height: 120%;
+}
+
+h1 {
+  font-size: 6.1rem;
+}
+h2 {
+  font-size: 4.9rem;
+}
+h3 {
+  font-size: 3.9rem;
+}
+h4 {
+  font-size: 3.1rem;
+}
+h5 {
+  font-size: 2.5rem;
+}
+h6 {
+  font-size: 2rem;
+}
+
+.bold {
+  font-weight: 400;
+}
+
+$body-01: 6.1rem;
+$body-01: 4.9rem;
+$body-01: 3.9rem;
+$body-01: 3.1rem;
+$body-01: 2.5rem;
+$body-01: 2rem;
+$body-01: 1.6rem;
