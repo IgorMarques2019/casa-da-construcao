@@ -1,0 +1,24 @@
+@import "header";
+@import "article-products";
+@import "section_opportunities";
+
+// Botões do site
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  &.btn-sm {
+    padding: 5px 1rem;
+    font-size: 1.2rem;
+  }
+  &.btn-md {
+    font-size: 1.6rem;
+    padding: 10px 2rem;
+  }
+
+  &.blue {
+    background-color: $blue-900;
+    color: $blue-100;
+  }
+}

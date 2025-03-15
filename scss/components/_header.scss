@@ -1,0 +1,85 @@
+header {
+  background: $linear-blue;
+
+  #promotional {
+    padding: 1rem 0px;
+    background-color: $orange-500;
+    .container {
+      @include flex("aic", "jcc", "r");
+      line-height: 120%;
+      color: $orange-50;
+      gap: 4.8rem;
+      p,
+      p > strong {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  #header {
+    @include flex("aic", "jsb", "r");
+    padding-top: 28px;
+    padding-bottom: 28px;
+    img {
+      max-width: 21.76rem;
+    }
+    input {
+      max-width: 45.6rem;
+      width: 100%;
+      padding: 1rem 2rem;
+      border: none;
+      transition: box-shadow 0.2s;
+      outline: none;
+      border-radius: 0.2rem;
+      color: $orange-600;
+      &:focus {
+        box-shadow: inset 0px 0px 0px 2px $orange-200;
+      }
+
+      &::-webkit-search-cancel-button {
+        appearance: none;
+      }
+    }
+
+    ul {
+      @include flex("aic", "jcc", "r");
+      gap: 1.5rem;
+      li {
+        @include flex("aic", "jc", "c");
+        gap: 0.5rem;
+        img {
+          max-width: 2.4rem;
+        }
+        p {
+          font-size: 1.2rem;
+          line-height: 120%;
+          color: $white-50;
+        }
+      }
+    }
+  }
+
+  #header-categories {
+    background-color: $blue-700;
+    ul {
+      @include flex("aic", "jcc", "r");
+      li {
+        a {
+          padding: 1rem 2rem;
+          color: $blue-50;
+          font-size: 1.4rem;
+          line-height: 120%;
+          transition: background-color 0.25s;
+
+          &:hover {
+            background-color: $blue-500;
+          }
+
+          &.active-link {
+            background-color: $orange-500;
+          }
+        }
+      }
+    }
+  }
+}

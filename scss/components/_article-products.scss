@@ -1,0 +1,82 @@
+article.products {
+  .container {
+    padding-top: 4.8rem;
+    padding-bottom: 4.8rem;
+    .products-area {
+      @include flex("aic", "jcs", "r");
+      gap: 20px;
+      img.promotional-banner {
+        max-width: 216px;
+        border-radius: 2.4rem;
+      }
+    }
+  }
+}
+
+// Componente Repetidor
+a.product-item {
+  max-width: 21.8rem;
+  > .top {
+    overflow: hidden;
+    border-radius: 0.5rem;
+    position: relative;
+    box-shadow: 0px 4px 4px #d7e7ef;
+
+    .product-img {
+      width: 100%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
+    .price {
+      position: absolute;
+      border-radius: 0;
+      font-size: 1.2rem;
+      top: 0;
+      right: 0;
+      border-bottom-left-radius: 0.5rem;
+    }
+  }
+
+  .text-product {
+    .top {
+      margin-top: 1rem;
+      .product-title,
+      .installments {
+        line-height: 150%;
+      }
+
+      .product-title {
+        font-size: 1.4rem;
+        color: $blue-900;
+        display: -webkit-box;
+        height: 4.2rem;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        overflow: hidden;
+      }
+      .installments {
+        color: $white-800;
+        font-size: 1.2rem;
+      }
+    }
+
+    > .bottom {
+      margin-top: 1.5rem;
+      @include flex("aic", "jcs", "r");
+      font-size: 1.6rem;
+      .icon {
+        max-width: 2.4rem;
+      }
+      .price {
+        color: $blue-900;
+      }
+
+      .discount {
+        color: $orange-400;
+        margin-left: 5px;
+      }
+    }
+  }
+}

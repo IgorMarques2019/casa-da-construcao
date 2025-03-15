@@ -1,2 +1,8 @@
 @import "resets";
 @import "mixins";
+@import "colors";
+@import "typograph";
+
+body {
+  background-color: $blue-50;
+}

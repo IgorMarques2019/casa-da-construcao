@@ -4,13 +4,209 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Casa da construção</title>
+  <link rel="stylesheet" href="css/styles.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <title>Loja da construção</title>
 </head>
 
 <body>
-  <div class="teste">
+  <header>
+    <div id="promotional">
+      <div class="container">
+        <p>Compre pelo whatsapp <strong>+55 14 99640-1017</strong></p>
+        <p>Televendas <strong>+55 14 3500-9402</strong></p>
+      </div>
+    </div>
+    <div id="header" class="container">
+      <img src="assets/images/logo-loja-da-construcao.svg" alt="">
+      <input type="search" name="" id="header-search" placeholder="Pesquise na loja...">
+      <ul aria-label="area do usuário">
+        <li aria-label="faça seu login">
+          <img src="assets/icons/login_user.svg" alt="">
+          <p>Faça seu Login</p>
+        </li>
+        <li aria-label="Meu carrinho">
+          <img src="assets/icons/carrinho_header.svg" alt="">
+          <p>Meu carrinho</p>
+        </li>
+      </ul>
+    </div>
 
-  </div>
+    <div id="header-categories">
+      <ul>
+        <li><a href="#">Todas as categorias</a></li>
+        <li><a href="#">Portas e janelas</a></li>
+        <li><a href="#">Cozinha</a></li>
+        <li><a href="#">Móveis</a></li>
+        <li><a href="#">Blog & Dicas</a></li>
+        <li><a class="active-link" href="#">Whatsapp</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div class="swiper main-banner" aria-label="Carrossel de imagens">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="assets/images/slides/banner-01.jpg"></div>
+        <div class="swiper-slide"><img src="assets/images/slides/banner-02.jpg"></div>
+        <div class="swiper-slide"><img src="assets/images/slides/banner-03.jpg"></div>
+      </div>
+    </div>
+  </main>
+
+  <section id="s-opportunities">
+    <div class="container">
+      <h2 class="s-title  deco">As Melhores oportunidades para casa toda</h2>
+      <div id="opportunities">
+        <a href="#" class="card-oppotunities">
+          <div class="img">
+            <img src="assets/images/oportunidade-01.png">
+          </div>
+          <button class="btn blue">Pronta Entrega</button>
+        </a>
+
+        <a href="#" class="card-oppotunities">
+          <div class="img">
+            <img src="assets/images/oportunidade-02.png">
+          </div>
+          <button class="btn blue">Até <strong>8x Sem Juros</strong></button>
+        </a>
+
+        <a href="#" class="card-oppotunities">
+          <div class="img">
+            <img src="assets/images/oportunidade-03.png">
+          </div>
+          <button class="btn blue">25% <strong>OFF</strong> no frete</button>
+        </a>
+
+        <a href="#" class="card-oppotunities">
+          <div class="img">
+            <img src="assets/images/oportunidade-04.png">
+          </div>
+          <button class="btn blue">8% Off no<strong>pix</strong></button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <article class="products promotional">
+    <div class="container">
+      <h2 class="s-title deco">Os favoritos com a entrega imediata!</h2>
+      <div class="products-area">
+        <img src="assets/images/promotional-banner.gif" alt="Banner promocional" class="promotional-banner">
+
+        <div class="swiper products-banner-swipper" aria-label="Carrossel de imagens">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="product-item">
+                <div class="top">
+                  <img class="product-img" src="assets/images/portas/porta-05.jpg" alt="">
+                  <span class="btn blue price btn-sm">R$ 2890,00</span>
+                </div>
+
+                <div class="text-product">
+                  <div class="top">
+                    <h3 class="product-title"> Porta Balcão de correr em aço 217 x 120 x Porta Balcão de correr em aço 217 x 120 x...Porta Balcão de correr em aço 217 x 120 x...</h3>
+                    <p class="installments">8x de R$ 356,24 s/juros</p>
+                  </div>
+                  <div class="bottom bold">
+                    <img class="icon" src="assets/icons/pix.svg" alt="">
+                    <p class="price">R$ 2.621,91</p>
+                    <p class="discount">8% OFF</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="product-item">
+                <div class="top">
+                  <img class="product-img" src="assets/images/portas/porta-05.jpg" alt="">
+                  <span class="btn blue price btn-sm">R$ 2890,00</span>
+                </div>
+
+                <div class="text-product">
+                  <div class="top">
+                    <h3 class="product-title"> Porta Balcão de correr em aço 217 x 120 x Porta Balcão de correr em aço 217 x 120 x...Porta Balcão de correr em aço 217 x 120 x...</h3>
+                    <p class="installments">8x de R$ 356,24 s/juros</p>
+                  </div>
+                  <div class="bottom bold">
+                    <img class="icon" src="assets/icons/pix.svg" alt="">
+                    <p class="price">R$ 2.621,91</p>
+                    <p class="discount">8% OFF</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="product-item">
+                <div class="top">
+                  <img class="product-img" src="assets/images/portas/porta-05.jpg" alt="">
+                  <span class="btn blue price btn-sm">R$ 2890,00</span>
+                </div>
+
+                <div class="text-product">
+                  <div class="top">
+                    <h3 class="product-title"> Porta Balcão de correr em aço 217 x 120 x Porta Balcão de correr em aço 217 x 120 x...Porta Balcão de correr em aço 217 x 120 x...</h3>
+                    <p class="installments">8x de R$ 356,24 s/juros</p>
+                  </div>
+                  <div class="bottom bold">
+                    <img class="icon" src="assets/icons/pix.svg" alt="">
+                    <p class="price">R$ 2.621,91</p>
+                    <p class="discount">8% OFF</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="product-item">
+                <div class="top">
+                  <img class="product-img" src="assets/images/portas/porta-05.jpg" alt="">
+                  <span class="btn blue price btn-sm">R$ 2890,00</span>
+                </div>
+
+                <div class="text-product">
+                  <div class="top">
+                    <h3 class="product-title"> Porta Balcão de correr em aço 217 x 120 x Porta Balcão de correr em aço 217 x 120 x...Porta Balcão de correr em aço 217 x 120 x...</h3>
+                    <p class="installments">8x de R$ 356,24 s/juros</p>
+                  </div>
+                  <div class="bottom bold">
+                    <img class="icon" src="assets/icons/pix.svg" alt="">
+                    <p class="price">R$ 2.621,91</p>
+                    <p class="discount">8% OFF</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="product-item">
+                <div class="top">
+                  <img class="product-img" src="assets/images/portas/porta-05.jpg" alt="">
+                  <span class="btn blue price btn-sm">R$ 2890,00</span>
+                </div>
+
+                <div class="text-product">
+                  <div class="top">
+                    <h3 class="product-title"> Porta Balcão de correr em aço 217 x 120 x Porta Balcão de correr em aço 217 x 120 x...Porta Balcão de correr em aço 217 x 120 x...</h3>
+                    <p class="installments">8x de R$ 356,24 s/juros</p>
+                  </div>
+                  <div class="bottom bold">
+                    <img class="icon" src="assets/icons/pix.svg" alt="">
+                    <p class="price">R$ 2.621,91</p>
+                    <p class="discount">8% OFF</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </article>
+
+
+  <script src="js/funcionality.js"></script>
 </body>
 
 </html>

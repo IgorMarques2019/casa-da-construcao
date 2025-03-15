@@ -18,6 +18,7 @@ h5,
 h6 {
   font-family: "MuseoModerno";
   line-height: 120%;
+  font-weight: 400;
 }
 
 h1 {
@@ -40,7 +41,7 @@ h6 {
 }
 
 .bold {
-  font-weight: 400;
+  font-weight: 600;
 }
 
 $body-01: 6.1rem;
@@ -50,3 +51,26 @@ $body-01: 3.1rem;
 $body-01: 2.5rem;
 $body-01: 2rem;
 $body-01: 1.6rem;
+
+// Titulo para as seções das páginas.
+.s-title {
+  font-size: 2.5rem;
+  line-height: 120%;
+  color: $blue-900;
+
+  &.deco {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.8rem;
+    gap: 10px;
+    &::before {
+      content: "";
+      display: block;
+      width: 1.4rem;
+      height: 1.4rem;
+      transform: rotate(-45deg);
+      background: linear-gradient(to right, $orange-700, $orange-200);
+      border-radius: 0.2rem;
+    }
+  }
+}

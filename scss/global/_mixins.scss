@@ -20,7 +20,8 @@ $flex: (
   "ai": initial,
   "ais": start,
   "aic": center,
-  "aie": end // Justify-content
+  "aie": end,
+  // Justify-content
   "jc": initial,
   "jcs": start,
   "jcc": center,
@@ -35,10 +36,8 @@ $flex: (
 );
 
 @mixin flex($ai, $jc, $dir) {
-  @if map-has-key($flex, $ai)
-    &&
-    map-has-key($flex, $jc)
-    &&
+  @if map-has-key($flex, $ai) and
+    map-has-key($flex, $jc) and
     map-has-key($flex, $dir)
   {
     display: flex;
